@@ -1,5 +1,7 @@
 <script setup lang="ts">
 </script>
 <template>
-  <h1 class="text-white bg-gray-500">kontakt</h1>
+  <article class="min-h-221px bg-gray-500">
+    <h2 class="text-white pl-36px pt-76px text-left text-54px">kontakt</h2>
+  </article>
 </template>

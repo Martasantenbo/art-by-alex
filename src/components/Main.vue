@@ -7,15 +7,15 @@
       <!-- will be inserting a photo here -->
     </div>
     <div class="min-h-82px bg-gray-500"></div>
-    <h2 class="text-blue-500 text-72px text-right pr-98px -mt-41px">Galerie</h2>
-    <div class="flex gap-20 justify-center mt-100px">
-      <div class="w-350px h-550px bg-green-500">
+    <h2 class="text-blue-500 text-72px text-right pr-25 -mt-10">Galerie</h2>
+    <div class="flex gap-20 justify-center mt-25">
+      <div class="w-88 h-138 bg-green-500">
         <!-- will be inserting a photo here -->
       </div>
-      <div class="w-350px h-550px bg-green-500">
+      <div class="w-88 h-138 bg-green-500">
         <!-- will be inserting a photo here -->
       </div>
-      <div class="w-350px h-550px bg-green-500">
+      <div class="w-88 h-138 bg-green-500">
         <!-- will be inserting a photo here -->
       </div>
     </div>

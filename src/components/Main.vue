@@ -2,11 +2,11 @@
 </script>
 <template>
   <article>
-    <div class="min-h-82px bg-gray-500"></div>
-    <div class="min-h-292px bg-blue-500">
+    <div class="min-h-21 bg-gray-500"></div>
+    <div class="min-h-73 bg-blue-500">
       <!-- will be inserting a photo here -->
     </div>
-    <div class="min-h-82px bg-gray-500"></div>
+    <div class="min-h-21 bg-gray-500"></div>
     <h2 class="text-blue-500 text-72px text-right pr-25 -mt-10">Galerie</h2>
     <div class="flex gap-20 justify-center mt-25">
       <div class="w-88 h-138 bg-green-500">
@@ -20,8 +20,8 @@
       </div>
     </div>
     <a href="#" class="text-24px text-gray-500 mt-8 inline-block">Click here to see gallery</a>
-    <h2 class="text-56px text-blue-500 mb-18px mt-17 pl-8 text-left">Header</h2>
-    <div class="min-w-1208px bg-gray-500 bg-opacity-95 mx-9 p-9">
+    <h2 class="text-56px text-blue-500 mb-5 mt-17 pl-8 text-left">Header</h2>
+    <div class="min-w-302 bg-gray-500 bg-opacity-95 mx-9 p-9">
       <p class="text-6 text-white column-rule text-left">Lorem ipsum dolor sit amet, consectetuer
         adipiscing
         elit. Vivamus

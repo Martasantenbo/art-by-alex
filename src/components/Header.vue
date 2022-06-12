@@ -14,6 +14,6 @@ defineProps<{
 }
 
 .gallery {
-  @apply bg-gray-500;
+  @apply bg-blue-500;
 }
 </style>

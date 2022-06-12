@@ -4,9 +4,9 @@ import GalleryMain from './GalleryMain.vue';
 import Footer from './Footer.vue';
 </script>
 <template>
-  <Header type="home" />
-  <GalleryMain type="home" />
-  <Footer type="home" />
+  <Header type="gallery" />
+  <GalleryMain type="gallery" />
+  <Footer type="gallery" />
 </template>
 <style scoped lang="scss">
 </style>

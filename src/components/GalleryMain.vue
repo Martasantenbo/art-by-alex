@@ -3,29 +3,8 @@
 <template>
   <article>
     <h2 class="text-primary text-56px py-12">Galerie</h2>
-    <div class="flex gap-19 justify-center">
-      <div class="w-90 h-90 bg-green-500">
-        <!-- will be inserting a photo here -->
-      </div>
-      <div class="w-90 h-90 bg-green-500">
-        <!-- will be inserting a photo here -->
-      </div>
-      <div class="w-90 h-90 bg-green-500">
-        <!-- will be inserting a photo here -->
-      </div>
-    </div>
-  </article>
-  <article class="mt-19">
-    <div class="flex gap-19 justify-center">
-      <div class="w-90 h-90 bg-green-500">
-        <!-- will be inserting a photo here -->
-      </div>
-      <div class="w-90 h-90 bg-green-500">
-        <!-- will be inserting a photo here -->
-      </div>
-      <div class="w-90 h-90 bg-green-500">
-        <!-- will be inserting a photo here -->
-      </div>
+    <div class="flex flex-wrap gap-19 justify-center">
+      <div v-for="n in 9" class="min-w-90 min-h-90 bg-green-500">{{ n }}</div>
     </div>
   </article>
 </template>

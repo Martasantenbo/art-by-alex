@@ -5,8 +5,8 @@ import Footer from './Footer.vue';
 </script>
 <template>
   <Header type="gallery" />
-  <GalleryMain type="gallery" />
-  <Footer type="gallery" />
+  <GalleryMain />
+  <Footer />
 </template>
 <style scoped lang="scss">
 </style>

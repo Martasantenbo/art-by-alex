@@ -5,7 +5,7 @@ defineProps<{
 </script>
 <template>
   <article class="min-h-63">
-    <h1 class="text-gray-500 pl-9 pt-22 text-left text-96px" :class="type">Art By Alex</h1>
+    <h1 class="text-primary pl-9 pt-22 text-left text-96px" :class="type">Art By Alex</h1>
   </article>
 </template>
 <style scoped lang="scss">
@@ -14,6 +14,6 @@ defineProps<{
 }
 
 .gallery {
-  @apply bg-blue-500;
+  @apply bg-secondary;
 }
 </style>

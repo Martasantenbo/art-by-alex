@@ -6,8 +6,8 @@ import Gallery from './components/Gallery.vue';
 </script>
 
 <template>
-  <!-- <HomePage /> -->
-  <Gallery />
+  <HomePage />
+  <!-- <Gallery /> -->
 </template>
 
 <style>

@@ -9,7 +9,7 @@
     <div class="min-h-21 bg-primary-pastel"></div>
     <h2 class="text-secondary text-72px text-right pr-25 -mt-10">Galerie</h2>
     <div class="main">
-      <div class="flex gap-20 justify-center pt-10">
+      <div class="flex gap-20 justify-center">
         <div class="w-88 h-138 bg-green-500">
           <!-- will be inserting a photo here -->
         </div>

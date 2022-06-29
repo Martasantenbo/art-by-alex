@@ -9,7 +9,7 @@
     <div class="min-h-21 bg-primary-pastel"></div>
     <h2 class="text-secondary text-72px text-right pr-25 -mt-10">Galerie</h2>
     <div class="main">
-      <div class="flex gap-20 justify-center mt-25">
+      <div class="flex gap-20 justify-center pt-10">
         <div class="w-88 h-138 bg-green-500">
           <!-- will be inserting a photo here -->
         </div>
@@ -21,7 +21,7 @@
         </div>
       </div>
 
-      <a href="#" class="text-primary text-24px mt-9">Click to see gallery</a>
+      <a href="#" class="text-primary text-24px inline-block mt-10">Click to see gallery</a>
 
       <h2 class="text-56px text-secondary mb-5 mt-17 pl-8 text-left">Header</h2>
       <div class="min-w-302 bg-primary-pastel bg-opacity-95 mx-9 p-9">
@@ -74,9 +74,10 @@
 }
 
 .main {
+  @apply pt-100;
+  @apply pb-40;
   background-image: url("../assets/images/homepage.svg");
   background-repeat: no-repeat;
-  background-position: right;
-  padding-top: 500px;
+  background-position: bottom right;
 }
 </style>

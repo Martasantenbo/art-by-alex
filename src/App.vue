@@ -6,8 +6,10 @@ import Gallery from './components/Gallery.vue';
 </script>
 
 <template>
-  <HomePage />
-  <!-- <Gallery /> -->
+  <div class="container mx-auto">
+    <HomePage />
+    <!-- <Gallery /> -->
+  </div>
 </template>
 
 <style>

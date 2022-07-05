@@ -4,8 +4,8 @@ defineProps<{
 }>()
 </script>
 <template>
-  <article class="min-h-50">
-    <h1 class="text-primary pl-9 py-18 text-left text-96px" :class="type">
+  <article class="xl:min-h-50">
+    <h1 class="text-primary text-left text-48px pl-5 py-9 xl:(text-96px pl-9 py-18)" :class="type">
       <router-link to="/">Art By Alex</router-link>
     </h1>
   </article>
@@ -20,5 +20,11 @@ defineProps<{
 
 .gallery {
   @apply bg-secondary;
+}
+
+@media screen and (max-width:1279px) {
+  .home {
+    background-size: auto 100%;
+  }
 }
 </style>

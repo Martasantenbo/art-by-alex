@@ -21,7 +21,7 @@
         </div>
       </div>
 
-      <a href="#" class="text-primary text-24px inline-block mt-10">Click to see gallery</a>
+      <router-link to="/gallery" class="text-primary text-24px inline-block mt-10">Click to see gallery</router-link>
 
       <h2 class="text-56px text-secondary mb-5 mt-17 pl-8 text-left">Header</h2>
       <div class="min-w-302 bg-primary-pastel bg-opacity-95 mx-9 p-9">

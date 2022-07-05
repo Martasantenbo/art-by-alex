@@ -7,8 +7,7 @@ import Gallery from './components/Gallery.vue';
 
 <template>
   <div class="container mx-auto">
-    <HomePage />
-    <!-- <Gallery /> -->
+    <router-view />
   </div>
 </template>
 

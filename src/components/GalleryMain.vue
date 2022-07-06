@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import Modal from './Modal.vue';
 </script>
 <template>
   <article>
@@ -11,6 +12,7 @@
         </div>
       </div>
     </div>
+    <Modal />
   </article>
 </template>
 <style scoped lang="scss">

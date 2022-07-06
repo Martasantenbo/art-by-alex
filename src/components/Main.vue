@@ -8,18 +8,18 @@
     <h2 class="text-secondary text-48px -mt-5 xl:(text-72px text-right pr-25 -mt-10)">Galerie</h2>
     <div class="main">
       <div class="flex gap-8 justify-center xl:(gap-20)">
-        <div class="w-25 h-60 xl:(w-88 h-138)">
+        <div class="w-25 h-45 xl:(w-88 h-138)">
           <img src="../assets/images/image-one.png" />
         </div>
-        <div class="w-25 h-60 xl:(w-88 h-138)">
+        <div class="w-25 h-45 xl:(w-88 h-138)">
           <img src="../assets/images/image-two.png" />
         </div>
-        <div class="w-25 h-60  xl:(w-88 h-138)">
+        <div class="w-25 h-45  xl:(w-88 h-138)">
           <img src="../assets/images/image-three.png" />
         </div>
       </div>
 
-      <router-link to="/gallery" class="text-primary text-20px mt-5 inline-block xl:(mt-10 text-28px)">Click to see
+      <router-link to="/gallery" class="text-primary text-20px  inline-block xl:(mt-10 text-28px)">Click to see
         gallery
       </router-link>
 

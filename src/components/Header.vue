@@ -5,7 +5,7 @@ defineProps<{
 </script>
 <template>
   <article class="xl:min-h-50">
-    <h1 class="text-primary text-left text-48px pl-5 py-9 xl:(text-96px pl-9 py-18)" :class="type">
+    <h1 class="text-primary text-left text-48px pl-5 py-9 md:text-72px xl:(text-96px pl-9 py-18)" :class="type">
       <router-link to="/">Art By Alex</router-link>
     </h1>
   </article>
@@ -22,7 +22,7 @@ defineProps<{
   @apply bg-secondary;
 }
 
-@media screen and (max-width:1279px) {
+@media screen and (max-width:767px) {
   .home {
     background-size: auto 100%;
   }

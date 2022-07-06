@@ -32,7 +32,10 @@
         Header
       </h2>
       <div class="mx-4 p-4 bg-primary-pastel bg-opacity-85 text-left xl:(mx-9 p-9 min-w-302)">
-        <p class="column-rule text-12px text-primary md:text-14px xl:text-18px">Lorem ipsum dolor sit amet,
+        <p
+          class="column-rule leading-normal text-12px text-primary md:(text-16px leading-normal) xl:(text-18px leading-normal)">
+          Lorem ipsum dolor sit
+          amet,
           consectetuer
           adipiscing
           elit. Vivamus

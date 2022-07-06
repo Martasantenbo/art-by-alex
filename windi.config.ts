@@ -25,6 +25,6 @@ export default defineConfig({
     }
   },
   shortcuts: {
-    'content-container': 'max-w-screen-xl px-5 md:(px-60px mx-auto)',
+    'content-container': 'max-w-screen-xl md:mx-auto',
   },
 });

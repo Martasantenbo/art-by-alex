@@ -1,16 +1,49 @@
-<script setup lang="ts">
-</script>
 <template>
-  <article class="bg-white">
-    <div>
-      <img src="../assets/images/cross.svg">
+  <teleport v-if="modelValue" to="#app">
+    <div @click="close"
+      class="z-50 fixed top-0 left-0 bg-opacity-60 bg-black w-full h-full flex items-center justify-center">
+      <div @click.stop
+        class="p-5 border-1 gap-4 bg-white border-gray shadow rounded-xl max-h-11/12 m-4 overflow-auto relative sm:max-w-600px"
+        :class="$attrs.class" role="dialog">
+        <div class="flex justify-between items-start gap-4">
+          <div>
+            <slot name="header" />
+          </div>
+
+          <button class="flex-shrink-0" @click="close" type="button">
+            <img src="../assets/images/cross.svg" width="20" alt="">
+          </button>
+        </div>
+
+        <slot name="content" />
+
+        <slot name="footer" />
+      </div>
     </div>
-    <h1 class="text-primary text-28px pt-5 md:(text-36px pt-7) xl:(text-44px pt-9)">Header</h1>
-    <div class="flex flex-wrap justify-center gap-10 py-10 md:py-7 xl:py-10">
-      <div class="bg-green-500 min-w-80 min-h-80 xl:(min-w-130 min-h-130)">img</div>
-      <div class="bg-green-500 min-w-80 min-h-80 xl:(min-w-130 min-h-130)">vid</div>
-    </div>
-  </article>
+  </teleport>
 </template>
-<style scoped lang="scss">
-</style>
+
+<script setup lang="ts">
+import { onUpdated } from 'vue';
+
+const props = defineProps<{
+  modelValue?: boolean;
+}>();
+
+const emit = defineEmits(['update:modelValue', 'close']);
+
+const close = () => {
+  emit('update:modelValue', false);
+  emit('close');
+};
+
+const onEscape = (e: any) => {
+  if (props.modelValue && e?.keyCode === 27) {
+    close();
+  }
+}
+
+onUpdated(() => {
+  document?.addEventListener('keydown', onEscape, { once: true });
+})
+</script>

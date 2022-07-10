@@ -1,5 +1,17 @@
 <script setup lang="ts">
+import { reactive } from 'vue'
 import Modal from './Modal.vue';
+const modal = reactive<{
+  open: boolean
+  activeIndex: number
+}>({
+  open: false,
+  activeIndex: 0
+});
+const openModal = (index: number) => {
+  modal.open = true;
+  modal.activeIndex = index;
+};
 </script>
 <template>
   <article>
@@ -14,11 +26,16 @@ import Modal from './Modal.vue';
         <h2 class="text-white text-36px py-7 md:(text-secondary text-48px) xl:(text-primary text-56px py-12)">Galerie
         </h2>
         <div class="flex flex-wrap gap-19 justify-center">
-          <div v-for="n in 9" class="bg-green-500 min-w-80 min-h-80 xl:(min-w-90 min-h-90)">{{ n }}</div>
+          <div @click="openModal(index)" v-for="(n, index) in 9"
+            class="bg-green-500 min-w-80 min-h-80 xl:(min-w-90 min-h-90)">{{
+                n
+            }}</div>
         </div>
       </div>
     </div>
-    <Modal />
+    <Modal v-model="modal.open">
+      <template v-slot:header>{{ modal.activeIndex + 1 }}</template>
+    </Modal>
   </article>
 </template>
 <style scoped lang="scss">

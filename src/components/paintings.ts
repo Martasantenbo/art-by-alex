@@ -2,111 +2,127 @@ export const paintings = [
   {
     header: '220401',
     image: '../assets/paintings/220401.jpg',
-    video: '../assets/paintings/220401.mov'
+    video: '../assets/paintings/220401.mov',
+    format: 30
   },
   {
     header: '220402',
     image: '../assets/paintings/220402.jpg',
-    video: '../assets/paintings/220402.mov'
+    video: '../assets/paintings/220402.mov',
+    format: 30
   },
   {
     header: '220403',
     image: '../assets/paintings/220403.jpg',
-    video: '../assets/paintings/220403.mov'
+    video: '../assets/paintings/220403.mov',
+    format: 30
   },
   {
     header: '220404',
     image: '../assets/paintings/220404.jpg',
-    video: '../assets/paintings/220404.mov'
+    video: '../assets/paintings/220404.mov',
+    format: 30
   },
   {
     header: '22040501',
     image: '../assets/paintings/22040501.jpg',
-    video: '../assets/paintings/22040501.mov'
+    video: '../assets/paintings/22040501.mov',
+    format: 30
   },
   {
     header: '22040502',
     image: '../assets/paintings/22040502.jpg',
-    video: '../assets/paintings/22040502.mov'
+    video: '../assets/paintings/22040502.mov',
+    format: 30
   },
   {
     header: '220406',
     image: '../assets/paintings/220406.jpg',
-    video: '../assets/paintings/220406.mov'
+    video: '../assets/paintings/220406.mov',
+    format: 30
   },
   {
     header: '220501',
     image: '../assets/paintings/220501.jpg',
-    video: '../assets/paintings/220501.mov'
+    video: '../assets/paintings/220501.mov',
+    format: 70
   },
   {
     header: '220502',
     image: '../assets/paintings/220502.jpg',
-    video: '../assets/paintings/220502.mov'
+    video: '../assets/paintings/220502.mov',
+    format: 70
   },
   {
     header: '220503',
     image: '../assets/paintings/220503.jpg',
-    video: '../assets/paintings/220503.mov'
+    video: '../assets/paintings/220503.mov',
+    format: 70
   },
   {
     header: '220504',
     image: '../assets/paintings/220504.jpg',
-    video: '../assets/paintings/220504.mov'
+    video: '../assets/paintings/220504.mov',
+    format: 100
   },
   {
     header: '220505',
     image: '../assets/paintings/220505.jpg',
-    video: '../assets/paintings/220505.mov'
+    video: '../assets/paintings/220505.mov',
+    format: 30
   },
   {
     header: '220506',
     image: '../assets/paintings/220506.jpg',
-    video: '../assets/paintings/220506.mov'
+    video: '../assets/paintings/220506.mov',
+    format: 30
   },
   {
     header: '220507',
     image: '../assets/paintings/220507.jpg',
-    video: '../assets/paintings/220507.mov'
+    video: '../assets/paintings/220507.mov',
+    format: 30
   },
   {
     header: '220508',
     image: '../assets/paintings/220508.jpg',
-    video: '../assets/paintings/220508.mov'
+    video: '../assets/paintings/220508.mov',
+    format: 30
   },
   {
     header: '220601',
     image: '../assets/paintings/220601.jpg',
-    video: '../assets/paintings/220601.mov'
+    video: '../assets/paintings/220601.mov',
+    format: 100
   },
   {
     header: '220602',
     image: '../assets/paintings/220602.jpg',
-    video: '../assets/paintings/220602.mov'
+    video: '../assets/paintings/220602.mov',
+    format: 30
   },
   {
     header: '220603',
     image: '../assets/paintings/220603.jpg',
-    video: '../assets/paintings/220603.mov'
+    video: '../assets/paintings/220603.mov',
+    format: 100
   },
   {
     header: '220604',
     image: '../assets/paintings/220604.jpg',
-    video: '../assets/paintings/220604.mov'
+    video: '../assets/paintings/220604.mov',
+    format: 70
   },
   {
     header: '220605',
     image: '../assets/paintings/220605.jpg',
-    video: '../assets/paintings/220605.mov'
+    video: '../assets/paintings/220605.mov',
+    format: 70
   },
   {
     header: '220606',
     image: '../assets/paintings/220606.jpg',
-    video: '../assets/paintings/220606.mov'
-  },
-  {
-    header: '220607',
-    image: '../assets/paintings/220607.jpg',
-    video: '../assets/paintings/220607.mov'
+    video: '../assets/paintings/220606.mov',
+    format: 70
   },
 ]

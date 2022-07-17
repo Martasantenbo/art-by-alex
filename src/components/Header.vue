@@ -5,7 +5,8 @@ defineProps<{
 </script>
 <template>
   <article class="xl:min-h-50">
-    <h1 class="text-primary text-left text-48px pl-5 py-9 md:text-72px xl:(text-96px pl-9 py-18)" :class="type">
+    <h1 class="text-primary text-left text-48px pl-5 py-9 font-header md:text-72px xl:(text-96px pl-9 py-18)"
+      :class="type">
       <router-link to="/">Art By Alex</router-link>
     </h1>
   </article>

@@ -6,7 +6,7 @@
     <img src="../assets/images/painting-up.png" width="1280" />
     <div class="min-h-11 bg-primary-pastel xl:min-h-21"></div>
     <h2
-      class="text-secondary text-48px -mt-5 md:(text-60px text-right pr-18 -mt-8) xl:(text-72px text-right pr-25 -mt-10)">
+      class="text-secondary text-48px -mt-5 font-header md:(text-60px text-right pr-18 -mt-8) xl:(text-72px text-right pr-25 -mt-10)">
       Galerie
     </h2>
     <div class="main">
@@ -22,18 +22,19 @@
         </div>
       </div>
 
-      <router-link to="/gallery" class="text-primary text-20px inline-block md:text-24px xl:(mt-10 text-28px)">Click to
+      <router-link to="/gallery"
+        class="text-primary text-20px inline-block font-text md:text-24px xl:(mt-10 text-28px)">Click to
         see
         gallery
       </router-link>
 
       <h2
-        class="text-primary text-36px mb-3 mt-9 pl-4 md:(text-44px text-left pl-5)xl:(mb-5 mt-17 pl-8 text-left text-56px text-secondary)">
+        class="text-primary text-36px mb-3 mt-9 pl-4 font-header md:(text-44px text-left pl-5)xl:(mb-5 mt-17 pl-8 text-left text-56px text-secondary)">
         Header
       </h2>
       <div class="mx-4 p-4 bg-primary-pastel bg-opacity-85 text-left xl:(mx-9 p-9 min-w-302)">
         <p
-          class="column-rule leading-normal text-12px text-primary md:(text-16px leading-normal) xl:(text-18px leading-normal)">
+          class="column-rule leading-normal text-12px text-primary font-text md:(text-16px leading-normal) xl:(text-18px leading-normal)">
           Lorem ipsum dolor sit
           amet,
           consectetuer

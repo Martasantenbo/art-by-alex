@@ -4,6 +4,10 @@ export default defineConfig({
   attributify: true,
   theme: {
     extend: {
+      fontFamily: {
+      header: ['Macondo Swash Caps', 'cursive'],
+      text: ['Montserrat', 'sans-serif']
+    },
       screens: {
         desktop: { min: '1280px' }
       },

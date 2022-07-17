@@ -18,7 +18,6 @@ const result = (n: number) => {
   resultPaintings.value = n == 0 ? paintings : paintings.filter(x => x.format == n);
 };
 
-
 </script>
 <template>
   <article>
@@ -36,7 +35,9 @@ const result = (n: number) => {
 
     <div class="up">
       <div class="down">
-        <h2 class="text-white text-36px py-7 md:(text-secondary text-48px) xl:(text-primary text-56px py-12)">Galerie
+        <h2
+          class="text-white text-36px py-7 font-header md:(text-secondary text-48px) xl:(text-primary text-56px py-12)">
+          Galerie
         </h2>
         <div class="flex flex-wrap gap-19 justify-center">
           <div @click="openModal(index)" v-for="(n, index) in resultPaintings"
@@ -49,15 +50,15 @@ const result = (n: number) => {
     <Modal v-model="modal.open">
 
       <template v-slot:header>
-        <h1 class="text-primary text-center text-24px">{{ resultPaintings[modal.activeIndex].header }}</h1>
+        <h1 class="text-primary text-32px">{{ resultPaintings[modal.activeIndex].header }}</h1>
       </template>
       <template v-slot:content>
-
-        <img :src="resultPaintings[modal.activeIndex].image" />
-        <video controls>
-          <source :src="resultPaintings[modal.activeIndex].video" type="video/mp4">
-        </video>
-
+        <div class="flex justify-center gap-20">
+          <img :src="resultPaintings[modal.activeIndex].image" />
+          <video controls>
+            <source :src="resultPaintings[modal.activeIndex].video" type="video/mp4" />
+          </video>
+        </div>
       </template>
 
     </Modal>

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 </script>
 <template>
-  <article class="min-h-10 flex justify-center pt-7 gap-8 w-full bg-primary-pastel md:min-h-38 xl:min-h-21">
+  <article class="min-h-21 flex pt-7 gap-8 justify-center w-full bg-primary-pastel">
 
 
     <a href="https://www.google.com/intl/cs/gmail/about/" class="mail min-w-8 min-h-8 block cursor-pointer">

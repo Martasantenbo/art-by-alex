@@ -1,7 +1,26 @@
 <script setup lang="ts">
 </script>
 <template>
-  <article class="min-h-25 w-full bg-primary-pastel md:min-h-38 xl:min-h-55">
-    <h2 class="text-primary pl-5 pt-9 text-left text-32px md:(text-48px pt-13) xl:(text-56px pl-9 pt-19)">kontakt</h2>
+  <article class="min-h-10 flex justify-center pt-7 gap-8 w-full bg-primary-pastel md:min-h-38 xl:min-h-21">
+
+
+    <a href="https://www.google.com/intl/cs/gmail/about/" class="mail min-w-8 min-h-8 block cursor-pointer">
+    </a>
+    <a href="https://www.instagram.com/" class="instagram min-w-8 min-h-8 block cursor-pointer">
+    </a>
+
   </article>
 </template>
+<style scoped lang="scss">
+.instagram {
+  background-image: url("../assets/images/instagram.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.mail {
+  background-image: url("../assets/images/mail.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+</style>

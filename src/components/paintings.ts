@@ -3,7 +3,7 @@ export const paintings = [
     header: '220401',
     image: '/src/assets/paintings/220401.jpg',
     video: '/src/assets/paintings/220401.mp4',
-    format: 30
+    format: 30,
   },
   {
     header: '220402',

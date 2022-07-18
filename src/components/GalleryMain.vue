@@ -41,7 +41,7 @@ const result = (n: number) => {
         </h2>
         <div class="flex flex-wrap gap-19 justify-center">
           <div @click="openModal(index)" v-for="(n, index) in resultPaintings"
-            class="min-w-80 min-h-80 max-w-80 max-h-80 xl:(min-w-90 min-h-90) overflow-hidden">
+            class="min-w-80 min-h-80 max-w-80 max-h-80 cursor-pointer xl:(min-w-90 min-h-90) overflow-hidden">
             <img :src="n.image" width="350" height="350">
           </div>
         </div>

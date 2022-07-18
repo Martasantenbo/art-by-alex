@@ -5,10 +5,10 @@
     <div class="min-h-11 bg-primary-pastel xl:min-h-21"></div>
     <img src="../assets/images/painting-up.png" width="1280" />
     <div class="min-h-11 bg-primary-pastel xl:min-h-21"></div>
-    <h2
-      class="text-secondary text-48px -mt-5 font-header md:(text-60px text-right pr-18 -mt-8) xl:(text-72px text-right pr-25 -mt-10)">
+    <router-link to="/gallery"
+      class="text-secondary text-48px -mt-5 font-header inline-block md:(text-60px pl-18 pr-18 -mt-8) xl:(text-72px pr-25 pl-242 -mt-10)">
       Galerie
-    </h2>
+    </router-link>
     <div class="main">
       <div class="flex gap-8 justify-center xl:(gap-20)">
         <div class="w-25 h-45 md:(w-45 h-80) xl:(w-88 h-138)">
@@ -87,7 +87,7 @@
 
 
 .main {
-  @apply py-10 xl: (pt-70 pb-40);
+  @apply py-10 xl: (pt-25 pb-40);
 }
 
 @media screen and (max-width:767px) {

@@ -4,7 +4,7 @@
   <article class="min-h-21 flex pt-7 gap-8 justify-center w-full bg-primary-pastel">
 
 
-    <a href="https://www.google.com/intl/cs/gmail/about/" class="mail min-w-8 min-h-8 block cursor-pointer">
+    <a href="mailto:info@artbyalex.cz" class="mail min-w-8 min-h-8 block cursor-pointer">
     </a>
     <a href="https://www.instagram.com/" class="instagram min-w-8 min-h-8 block cursor-pointer">
     </a>

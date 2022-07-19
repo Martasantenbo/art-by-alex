@@ -23,12 +23,18 @@ const result = (n: number) => {
   <article>
     <div class="bg-primary-pastel py-3 md:(flex gap-11 justify-center) xl:(flex gap-11 justify-center)">
       <div class="text-20px leading-normal md:text-24px xl:text-24px text-primary">Format:</div>
-      <div class="text-20px leading-normal md:text-24px xl:text-24px text-primary cursor-pointer" @click="result(30)">
-        30:30</div>
-      <div class="text-20px leading-normal md:text-24px xl:text-24px text-primary cursor-pointer" @click="result(70)">
+      <div class="text-20px leading-normal md:text-24px xl:text-24px text-primary cursor-pointer" @click="result(4040)">
         40:40</div>
-      <div class="text-20px leading-normal md:text-24px xl:text-24px text-primary cursor-pointer" @click="result(100)">
-        140:140</div>
+      <div class="text-20px leading-normal md:text-24px xl:text-24px text-primary cursor-pointer" @click="result(3060)">
+        30:60</div>
+      <div class="text-20px leading-normal md:text-24px xl:text-24px text-primary cursor-pointer" @click="result(3070)">
+        30:70</div>
+      <div class="text-20px leading-normal md:text-24px xl:text-24px text-primary cursor-pointer" @click="result(5060)">
+        50:60</div>
+      <div class="text-20px leading-normal md:text-24px xl:text-24px text-primary cursor-pointer" @click="result(5070)">
+        50:70</div>
+      <div class="text-20px leading-normal md:text-24px xl:text-24px text-primary cursor-pointer" @click="result(6080)">
+        60:80</div>
       <div class="text-20px leading-normal md:text-24px xl:text-24px text-primary cursor-pointer" @click="result(0)">All
       </div>
     </div>
@@ -58,6 +64,15 @@ const result = (n: number) => {
           <video controls>
             <source :src="resultPaintings[modal.activeIndex].video" type="video/mp4" />
           </video>
+        </div>
+      </template>
+      <template v-slot:footer>
+        <div class="flex justify-center gap-6 pt-4 text-24px">
+          <h2 class="text-primary">Price: {{ resultPaintings[modal.activeIndex].price }},-
+          </h2>
+          <a :href="`mailto:info@artbyalex.cz?subject=Obraz ${resultPaintings[modal.activeIndex].header}`"
+            class="cursor-pointer">Contact if
+            interested</a>
         </div>
       </template>
 

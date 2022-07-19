@@ -3,9 +3,9 @@
     <div @click="close"
       class="z-50 fixed top-0 left-0 bg-opacity-60 bg-black w-full h-full flex items-center justify-center">
       <div @click.stop
-        class="p-5 border-1 gap-4 bg-white border-gray shadow rounded-xl max-h-11/12 m-4 overflow-auto relative sm:max-w-600px"
+        class="p-5 border-1 gap-4 bg-white border-gray shadow rounded-xl max-h-11/12 m-4 overflow-auto relative sm:min-w-40 md:min-w-150 xl:min-w-175"
         :class="$attrs.class" role="dialog">
-        <div class="flex justify-between items-start gap-4">
+        <div class="sm:pl-50 md:pl-63 xl:pl-73 pb-4 flex justify-between">
           <div>
             <slot name="header" />
           </div>

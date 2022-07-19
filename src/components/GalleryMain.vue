@@ -56,18 +56,21 @@ const result = (n: number) => {
     <Modal v-model="modal.open">
 
       <template v-slot:header>
-        <h1 class="text-primary text-32px">{{ resultPaintings[modal.activeIndex].header }}</h1>
+        <h1 class="text-primary text-24px md:text-32px xl:text-32px">{{ resultPaintings[modal.activeIndex].header }}
+        </h1>
       </template>
       <template v-slot:content>
-        <div class="flex justify-center gap-20">
-          <img :src="resultPaintings[modal.activeIndex].image" />
-          <video controls>
+        <div class="flex justify-center gap-5 md:gap-20 xl:gap-20">
+          <div class="max-h-50 max-w-50 md:(max-h-100 max-w-100 pt-14) xl:(max-h-100 max-w-100 pt-14)">
+            <img :src="resultPaintings[modal.activeIndex].image" />
+          </div>
+          <video controls class="max-h-50 max-w-50 md:(max-h-100 max-w-100) xl:(max-h-100 max-w-100)">
             <source :src="resultPaintings[modal.activeIndex].video" type="video/mp4" />
           </video>
         </div>
       </template>
       <template v-slot:footer>
-        <div class="flex justify-center gap-6 pt-4 text-24px">
+        <div class="flex justify-center text-16 px gap-4 pt-2 md:(gap-6 pt-4 text-24px) xl:(gap-6 pt-4 text-24px)">
           <h2 class="text-primary">Price: {{ resultPaintings[modal.activeIndex].price }},-
           </h2>
           <a :href="`mailto:info@artbyalex.cz?subject=Obraz ${resultPaintings[modal.activeIndex].header}`"

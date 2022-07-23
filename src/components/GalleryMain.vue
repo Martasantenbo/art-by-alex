@@ -64,7 +64,7 @@ const result = (n: number) => {
           <div class="max-h-50 max-w-50 md:(max-h-100 max-w-100 pt-14) xl:(max-h-100 max-w-100 pt-14)">
             <img :src="resultPaintings[modal.activeIndex].image" />
           </div>
-          <video controls class="max-h-50 max-w-50 md:(max-h-100 max-w-100) xl:(max-h-100 max-w-100)">
+          <video controls muted class="max-h-50 max-w-50 md:(max-h-100 max-w-100) xl:(max-h-100 max-w-100)">
             <source :src="resultPaintings[modal.activeIndex].video" type="video/mp4" />
           </video>
         </div>

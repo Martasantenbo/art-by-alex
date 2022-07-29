@@ -88,6 +88,10 @@ const result = (n: number) => {
   background-repeat: no-repeat;
 }
 
+.grayscale-80 {
+  --tw-grayscale: grayscale(0.8);
+}
+
 .down {
   @apply pb-40;
   background-image: url("../assets/images/gallery-down.svg");

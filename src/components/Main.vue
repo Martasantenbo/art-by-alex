@@ -29,52 +29,27 @@
       </router-link>
 
       <h2
-        class="text-primary text-36px mb-3 mt-9 pl-4 font-header md:(text-44px text-left pl-5)xl:(mb-5 mt-17 pl-8 text-left text-56px text-secondary)">
-        Header
+        class="text-primary text-36px mb-3 mt-9 pl-4 font-header md:(text-44px text-left pl-5)xl:(mb-5 mt-17 pl-8 text-left text-56px)">
+        Art by Alex
       </h2>
       <div class="mx-4 p-4 bg-primary-pastel bg-opacity-85 text-left xl:(mx-9 p-9 min-w-302)">
         <p
           class="column-rule leading-normal text-12px text-primary font-text md:(text-16px leading-normal) xl:(text-18px leading-normal)">
-          Lorem ipsum dolor sit
-          amet,
-          consectetuer
-          adipiscing
-          elit. Vivamus
-          luctus egestas leo. Nullam rhoncus aliquam metus. Donec ipsum massa, ullamcorper in, auctor et, scelerisque
-          sed,
-          est. Vivamus ac leo pretium faucibus. Fusce aliquam vestibulum ipsum. Praesent id justo in neque elementum
-          ultrices. Nulla non arcu lacinia neque faucibus fringilla. Mauris tincidunt sem sed arcu. Sed elit dui,
-          pellentesque a, faucibus vel, interdum nec, diam. Class aptent taciti sociosqu ad litora torquent per conubia
-          nostra, per inceptos hymenaeos. Pellentesque ipsum. Aliquam ornare wisi eu metus. Fusce dui leo, imperdiet in,
-          aliquam sit amet, feugiat eu, orci. Pellentesque ipsum.Lorem ipsum dolor sit amet, consectetuer
-          adipiscing
-          elit. Vivamus
-          luctus egestas leo. Nullam rhoncus aliquam metus. Donec ipsum massa, ullamcorper in, auctor et, scelerisque
-          sed,
-          est. Vivamus ac leo pretium faucibus. Fusce aliquam vestibulum ipsum. Praesent id justo in neque elementum
-          ultrices. Nulla non arcu lacinia neque faucibus fringilla. Mauris tincidunt sem sed arcu. Sed elit dui,
-          pellentesque a, faucibus vel, interdum nec, diam. Class aptent taciti sociosqu ad litora torquent per conubia
-          nostra, per inceptos hymenaeos. Pellentesque ipsum. Aliquam ornare wisi eu metus. Fusce dui leo, imperdiet in,
-          aliquam sit amet, feugiat eu, orci. Pellentesque ipsum.
-          Lorem ipsum dolor sit amet, consectetuer
-          adipiscing
-          elit. Vivamus
-          luctus egestas leo. Nullam rhoncus aliquam metus. Donec ipsum massa, ullamcorper in, auctor et, scelerisque
-          sed,
-          est. Vivamus ac leo pretium faucibus. Fusce aliquam vestibulum ipsum. Praesent id justo in neque elementum
-          ultrices. Nulla non arcu lacinia neque faucibus fringilla. Mauris tincidunt sem sed arcu. Sed elit dui,
-          pellentesque a, faucibus vel, interdum nec, diam. Class aptent taciti sociosqu ad litora torquent per conubia
-          nostra, per inceptos hymenaeos. Pellentesque ipsum. Aliquam ornare wisi eu metus. Fusce dui leo, imperdiet in,
-          aliquam sit amet, feugiat eu, orci. Pellentesque ipsum.Lorem ipsum dolor sit amet, consectetuer
-          adipiscing
-          elit. Vivamus
-          luctus egestas leo. Nullam rhoncus aliquam metus. Donec ipsum massa, ullamcorper in, auctor et, scelerisque
-          sed,
-          est. Vivamus ac leo pretium faucibus. Fusce aliquam vestibulum ipsum. Praesent id justo in neque elementum
-          ultrices. Nulla non arcu lacinia neque faucibus fringilla. Mauris tincidunt sem sed arcu. Sed elit dui,
-          pellentesque a, faucibus vel, interdum nec, diam. Class aptent taciti sociosqu ad litora torquent per conubia
-          nostra, per inceptos hymenaeos. Pellentesque ipsum. Aliquam ornare wisi eu metus. Fusce dui leo, imperdiet in,
-          aliquam sit amet, feugiat eu, orci. Pellentesque ipsum.</p>
+          Jmenuji se Alex a maluji abstraktní autorské obrazy, nejčastěji akrylovými barvami na plátno.
+          Všechno to začalo vlastně dost nenápadně. Své první obrazy jsem malovala především sama
+          pro sebe. Baví mě vytvářet akrylové abstrakce a pozorovat, jak se dílo vyvíjí. Mám ráda barvy
+          a jejich vzájemné propojování.
+          Umělecká tvorba pro mě byla dlouhou dobu hlavně formou relaxace. Pak se ale objevil první
+          člověk, který viděl můj obraz a chtěl si ho koupit. Jednoho dne prostě zazvonil a byl tu. Měl
+          pocit, že by moje dílo mohlo být originálním dárkem a zároveň mou práci finančně ocenil.
+          Kupodivu to netrvalo dlouho a objevil se další zájemce. A pak další… a když těch lidí najednou
+          bylo víc, než bych jako příležitostná malířka čekala, rozhodla jsem se vytvořit místo, kde se se
+          mnou jednoduše spojíte.
+          V galerii si můžete vybrat obraz, který vás zaujme, nebo si objednejte svůj vlastní, který pro
+          vás na zakázku namaluji.
+          <br>
+          <br>Vítejte na webu Art by Alex.
+        </p>
       </div>
     </div>
   </article>
@@ -87,7 +62,7 @@
 
 
 .main {
-  @apply py-10 xl: (pt-25 pb-40);
+  @apply py-10 xl: (pt-114 pb-40);
 }
 
 @media screen and (max-width:767px) {

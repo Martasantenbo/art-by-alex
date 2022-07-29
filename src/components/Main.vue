@@ -45,7 +45,7 @@
           Kupodivu to netrvalo dlouho a objevil se další zájemce. A pak další… a když těch lidí najednou
           bylo víc, než bych jako příležitostná malířka čekala, rozhodla jsem se vytvořit místo, kde se se
           mnou jednoduše spojíte.
-          V galerii si můžete vybrat obraz, který vás zaujme, nebo si objednejte svůj vlastní, který pro
+          V galerii si můžete vybrat obraz, který vás zaujme, nebo si objednejte svůj vlastní, který pro
           vás na zakázku namaluji.
           <br>
           <br>Vítejte na webu Art by Alex.
@@ -60,9 +60,8 @@
   column-gap: 60px;
 }
 
-
 .main {
-  @apply py-10 xl: (pt-114 pb-40);
+  @apply py-10 xl: py-77;
 }
 
 @media screen and (max-width:767px) {

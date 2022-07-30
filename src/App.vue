@@ -1,3 +1,11 @@
+<script setup lang="ts">
+import { ref } from 'vue'
+import { languages } from './components/languages'
+const resultLanguages = ref()
+const languageTwo = (n: number) => {
+  resultLanguages.value = n == 0 ? languages.czech : languages.english;
+};
+</script>
 <template>
   <div class="content-container mx-auto bg-white">
     <router-view />

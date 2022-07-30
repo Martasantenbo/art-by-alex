@@ -1,4 +1,8 @@
 <script setup lang="ts">
+defineProps<{
+  header: string
+  click: string
+}>()
 </script>
 <template>
   <article>
@@ -7,7 +11,7 @@
     <div class="min-h-11 bg-primary-pastel xl:min-h-21"></div>
     <router-link to="/gallery"
       class="text-secondary text-48px -mt-5 font-header inline-block md:(text-60px pl-18 pr-18 -mt-8) xl:(text-72px pr-25 pl-242 -mt-10)">
-      Galerie
+      {{ header }}
     </router-link>
     <div class="main">
       <div class="flex gap-8 justify-center xl:(gap-20)">
@@ -47,8 +51,7 @@
           mnou jednoduše spojíte.
           V galerii si můžete vybrat obraz, který vás zaujme, nebo si objednejte svůj vlastní, který pro
           vás na zakázku namaluji.
-          <br>
-          <br>Vítejte na webu Art by Alex.
+          Vítejte na webu Art by Alex.
         </p>
       </div>
     </div>

@@ -1,6 +1,6 @@
 # Art By Alex
 
-## Project for an artist Alexandra Moravcová
+## Project for artist Alexandra Moravcová
 
 It will consist of a homepage and a gallery with a filter for her artwork
 

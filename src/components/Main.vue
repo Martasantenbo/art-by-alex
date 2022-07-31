@@ -1,7 +1,10 @@
 <script setup lang="ts">
 defineProps<{
   header: string
+  headerTwo: string
   click: string
+  aboutMe: string
+  aboutMeWelcome: string
 }>()
 </script>
 <template>
@@ -27,31 +30,17 @@ defineProps<{
       </div>
 
       <router-link to="/gallery"
-        class="text-primary text-20px inline-block font-text md:text-24px xl:(mt-10 text-28px)">Click to
-        see
-        gallery
+        class="text-primary text-20px inline-block font-text md:text-24px xl:(mt-10 text-28px)"> {{ click }}
       </router-link>
 
       <h2
         class="text-primary text-36px mb-3 mt-9 pl-4 font-header md:(text-44px text-left pl-5)xl:(mb-5 mt-17 pl-8 text-left text-56px)">
-        Art by Alex
+        {{ headerTwo }}
       </h2>
       <div class="mx-4 p-4 bg-primary-pastel bg-opacity-85 text-left xl:(mx-9 p-9 min-w-302)">
         <p
           class="column-rule leading-normal text-12px text-primary font-text md:(text-16px leading-normal) xl:(text-18px leading-normal)">
-          Jmenuji se Alex a maluji abstraktní autorské obrazy, nejčastěji akrylovými barvami na plátno.
-          Všechno to začalo vlastně dost nenápadně. Své první obrazy jsem malovala především sama
-          pro sebe. Baví mě vytvářet akrylové abstrakce a pozorovat, jak se dílo vyvíjí. Mám ráda barvy
-          a jejich vzájemné propojování.
-          Umělecká tvorba pro mě byla dlouhou dobu hlavně formou relaxace. Pak se ale objevil první
-          člověk, který viděl můj obraz a chtěl si ho koupit. Jednoho dne prostě zazvonil a byl tu. Měl
-          pocit, že by moje dílo mohlo být originálním dárkem a zároveň mou práci finančně ocenil.
-          Kupodivu to netrvalo dlouho a objevil se další zájemce. A pak další… a když těch lidí najednou
-          bylo víc, než bych jako příležitostná malířka čekala, rozhodla jsem se vytvořit místo, kde se se
-          mnou jednoduše spojíte.
-          V galerii si můžete vybrat obraz, který vás zaujme, nebo si objednejte svůj vlastní, který pro
-          vás na zakázku namaluji.
-          Vítejte na webu Art by Alex.
+          {{ aboutMe }} <span class="font-semibold block">{{ aboutMeWelcome }}</span>
         </p>
       </div>
     </div>

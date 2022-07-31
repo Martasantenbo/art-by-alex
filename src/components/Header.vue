@@ -1,13 +1,19 @@
 <script setup lang="ts">
+import { ref } from 'vue';
 defineProps<{
   type: string;
 }>()
 
-defineEmits<{
-  (e: 'change', language: string): void
+const emit = defineEmits<{
+  (e: 'change'): void
 }>()
 
+const languageEn = ref(false)
 
+const changeLanguage = () => {
+  languageEn.value = !languageEn.value
+  emit('change')
+}
 
 </script>
 <template>
@@ -16,7 +22,8 @@ defineEmits<{
       :class="type">
       <router-link to="/">Art By Alex</router-link>
     </h1>
-    <div class="w-8 h-6 cz absolute top-5 right-5 cursor-pointer" :class="{ 'en': languageEn }"></div>
+    <div class="w-8 h-6 cz absolute top-5 right-5 cursor-pointer" :class="{ 'en': languageEn }" @click="changeLanguage">
+    </div>
   </article>
 </template>
 <style scoped lang="scss">
@@ -31,12 +38,14 @@ defineEmits<{
   background-image: url("../assets/images/cz.svg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .en {
   background-image: url("../assets/images/en.svg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .gallery {

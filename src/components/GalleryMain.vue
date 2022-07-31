@@ -84,13 +84,13 @@ const result = (n: number) => {
       <template v-slot:footer>
         <div v-if="resultPaintings[modal.activeIndex].available"
           class="flex justify-center text-16 px gap-4 pt-2 md:(gap-6 pt-4 text-24px) xl:(gap-6 pt-4 text-24px)">
-          <h2 class="text-primary">{{ price }}: {{ resultPaintings[modal.activeIndex].price }},-
+          <h2 class="text-primary font-semibold">{{ price }}: {{ resultPaintings[modal.activeIndex].price }},-
           </h2>
           <a :href="`mailto:info@artbyalex.cz?subject=Obraz ${resultPaintings[modal.activeIndex].header}`"
-            class="cursor-pointer">{{ contact }}</a>
+            class="cursor-pointer font-semibold">{{ contact }}</a>
         </div>
         <div v-else
-          class="flex justify-center text-16 px gap-4 pt-2 md:(gap-6 pt-4 text-24px) xl:(gap-6 pt-4 text-24px)">
+          class="flex justify-center text-16 px gap-4 pt-2 font-semibold md:(gap-6 pt-4 text-24px) xl:(gap-6 pt-4 text-24px)">
           {{ unavailable }}
         </div>
       </template>

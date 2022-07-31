@@ -9,8 +9,10 @@ defineProps<{
       :class="type">
       <router-link to="/">Art By Alex</router-link>
     </h1>
-    <h1 class="text-right cursor-pointer" @click="languageTwo(0)">Czech</h1>
-    <h1 class="text-right cursor-pointer" @click="languageTwo(1)">English</h1>
+    <h1 class="text-right cursor-pointer">Czech</h1>
+    <!-- @click="languageTwo(0)" -->
+    <h1 class="text-right cursor-pointer">English</h1>
+    <!-- @click="languageTwo(1)" -->
   </article>
 </template>
 <style scoped lang="scss">

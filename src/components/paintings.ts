@@ -4,7 +4,7 @@ export const paintings = [
     image: '/src/assets/paintings/220401.jpg',
     video: '/src/assets/paintings/220401.mp4',
     format: 4040,
-    available: true,
+    available: false,
     price: 2500
   },
   {

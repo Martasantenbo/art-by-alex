@@ -48,7 +48,7 @@ const result = (n: number) => {
         <div class="flex flex-wrap gap-19 justify-center">
           <div @click="openModal(index)" v-for="(n, index) in resultPaintings"
             class="min-w-80 min-h-80 max-w-80 max-h-80 cursor-pointer xl:(min-w-90 min-h-90) overflow-hidden">
-            <img :src="n.image" width="350" height="350">
+            <img :src="n.image" width="350" height="350" :class="{ 'grscl': !n.available }">
           </div>
         </div>
       </div>
@@ -60,8 +60,8 @@ const result = (n: number) => {
         </h1>
       </template>
       <template v-slot:content>
-        <div class="flex justify-center gap-5 md:gap-20 xl:gap-20">
-          <div class="max-h-50 max-w-50 md:(max-h-100 max-w-100 pt-14) xl:(max-h-100 max-w-100 pt-14)">
+        <div class="flex justify-center gap-5 overflow-auto md:gap-20 xl:gap-20">
+          <div class="flex items-center max-h-50 max-w-50 md:(max-h-100 max-w-100) xl:(max-h-100 max-w-100)">
             <img :src="resultPaintings[modal.activeIndex].image" />
           </div>
           <video controls muted class="max-h-50 max-w-50 md:(max-h-100 max-w-100) xl:(max-h-100 max-w-100)">
@@ -70,12 +70,17 @@ const result = (n: number) => {
         </div>
       </template>
       <template v-slot:footer>
-        <div class="flex justify-center text-16 px gap-4 pt-2 md:(gap-6 pt-4 text-24px) xl:(gap-6 pt-4 text-24px)">
+        <div v-if="resultPaintings[modal.activeIndex].available"
+          class="flex justify-center text-16 px gap-4 pt-2 md:(gap-6 pt-4 text-24px) xl:(gap-6 pt-4 text-24px)">
           <h2 class="text-primary">Price: {{ resultPaintings[modal.activeIndex].price }},-
           </h2>
           <a :href="`mailto:info@artbyalex.cz?subject=Obraz ${resultPaintings[modal.activeIndex].header}`"
             class="cursor-pointer">Contact if
             interested</a>
+        </div>
+        <div v-else
+          class="flex justify-center text-16 px gap-4 pt-2 md:(gap-6 pt-4 text-24px) xl:(gap-6 pt-4 text-24px)">
+          Unavailable
         </div>
       </template>
 
@@ -88,8 +93,8 @@ const result = (n: number) => {
   background-repeat: no-repeat;
 }
 
-.grayscale-80 {
-  --tw-grayscale: grayscale(0.8);
+.grscl {
+  filter: grayscale(80%) saturate(50%);
 }
 
 .down {

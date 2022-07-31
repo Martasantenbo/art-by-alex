@@ -8,7 +8,7 @@ const emit = defineEmits<{
   (e: 'change'): void
 }>()
 
-const languageEn = ref(false)
+const languageEn = ref(true)
 
 const changeLanguage = () => {
   languageEn.value = !languageEn.value

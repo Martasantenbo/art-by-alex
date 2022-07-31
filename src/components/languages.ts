@@ -9,7 +9,7 @@ czech:
   aboutMeWelcome:'Vítejte na webu Art by Alex.',
   price: 'Cena',
   all: 'Všechno',
-  contact: 'Kontaktuje',
+  contact: 'Kontaktujte',
   format: 'Formát'
 },
 english: 

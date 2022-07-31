@@ -91,7 +91,7 @@ const result = (n: number) => {
         </div>
         <div v-else
           class="flex justify-center text-16 px gap-4 pt-2 md:(gap-6 pt-4 text-24px) xl:(gap-6 pt-4 text-24px)">
-          Unavailable
+          {{ unavailable }}
         </div>
       </template>
 

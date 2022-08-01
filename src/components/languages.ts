@@ -8,7 +8,7 @@ czech:
   aboutMe: 'Jmenuji se Alex a maluji abstraktní autorské obrazy, nejčastěji akrylovými barvami na plátno. Všechno to začalo vlastně dost nenápadně. Své první obrazy jsem malovala především sama pro sebe. Baví mě vytvářet akrylové abstrakce a pozorovat, jak se dílo vyvíjí. Mám ráda barvy a jejich vzájemné propojování. Umělecká tvorba pro mě byla dlouhou dobu hlavně formou relaxace. Pak se ale objevil první člověk, který viděl můj obraz a chtěl si ho koupit. Jednoho dne prostě zazvonil a byl tu. Měl pocit, že by moje dílo mohlo být originálním dárkem a zároveň mou práci finančně ocenil. Kupodivu to netrvalo dlouho a objevil se další zájemce. A pak další… a když těch lidí najednou bylo víc, než bych jako příležitostná malířka čekala, rozhodla jsem se vytvořit místo, kde se se mnou jednoduše spojíte. V galerii si můžete vybrat obraz, který vás zaujme, nebo si objednejte svůj vlastní, který pro vás na zakázku namaluji.',
   aboutMeWelcome:'Vítejte na webu Art by Alex.',
   price: 'Cena',
-  all: 'Všechno',
+  all: 'Vše',
   contact: 'V případě zájmu kontaktujte',
   format: 'Formát'
 },

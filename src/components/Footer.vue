@@ -6,7 +6,7 @@
 
     <a href="mailto:info@artbyalex.cz" class="mail min-w-8 min-h-8 block cursor-pointer">
     </a>
-    <a href="https://www.instagram.com/" class="instagram min-w-8 min-h-8 block cursor-pointer">
+    <a href="https://www.instagram.com/art_by_alex_cz/" class="instagram min-w-8 min-h-8 block cursor-pointer">
     </a>
 
   </article>

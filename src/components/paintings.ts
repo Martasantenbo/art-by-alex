@@ -93,7 +93,7 @@ export const paintings = [
     video: '/paintings/220505.mp4',
     format: 5060,
     available: true,
-    // price: 
+    price: 5000 
   },
   {
     header: '220506',
@@ -101,7 +101,7 @@ export const paintings = [
     video: '/paintings/220506.mp4',
     format: 5060,
     available: true,
-    // price: 
+    price: 5000
   },
   {
     header: '220507',

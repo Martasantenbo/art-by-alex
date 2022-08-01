@@ -34,17 +34,17 @@ const result = (n: number) => {
     <div class="bg-primary-pastel py-3 md:(flex gap-11 justify-center) xl:(flex gap-11 justify-center)">
       <div class="text-20px leading-normal md:text-24px xl:text-24px text-primary">{{ format }}:</div>
       <div class="text-20px leading-normal md:text-24px xl:text-24px text-primary cursor-pointer" @click="result(4040)">
-        40:40</div>
+        40x40</div>
       <div class="text-20px leading-normal md:text-24px xl:text-24px text-primary cursor-pointer" @click="result(3060)">
-        30:60</div>
+        30x60</div>
       <div class="text-20px leading-normal md:text-24px xl:text-24px text-primary cursor-pointer" @click="result(3070)">
-        30:70</div>
+        30x70</div>
       <div class="text-20px leading-normal md:text-24px xl:text-24px text-primary cursor-pointer" @click="result(5060)">
-        50:60</div>
+        50x60</div>
       <div class="text-20px leading-normal md:text-24px xl:text-24px text-primary cursor-pointer" @click="result(5070)">
-        50:70</div>
+        50x70</div>
       <div class="text-20px leading-normal md:text-24px xl:text-24px text-primary cursor-pointer" @click="result(6080)">
-        60:80</div>
+        60x80</div>
       <div class="text-20px leading-normal md:text-24px xl:text-24px text-primary cursor-pointer" @click="result(0)">{{
           all
       }}

@@ -31,7 +31,7 @@ const result = (n: number) => {
 </script>
 <template>
   <article>
-    <div class="bg-primary-pastel py-3 md:(flex gap-11 justify-center) xl:(flex gap-11 justify-center)">
+    <div class="bg-primary-pastel py-3 md:(flex gap-8 justify-center) xl:(flex gap-11 justify-center)">
       <div class="text-20px leading-normal md:text-24px xl:text-24px text-primary">{{ format }}:</div>
       <div class="text-20px leading-normal md:text-24px xl:text-24px text-primary cursor-pointer" @click="result(4040)">
         40x40</div>
@@ -59,8 +59,12 @@ const result = (n: number) => {
         </h2>
         <div class="flex flex-wrap gap-19 justify-center">
           <div @click="openModal(index)" v-for="(n, index) in resultPaintings"
-            class="min-w-80 min-h-80 max-w-80 max-h-80 cursor-pointer xl:(min-w-90 min-h-90) overflow-hidden">
-            <img :src="n.image" width="350" height="350" :class="{ 'grscl': !n.available }">
+            class="relative min-w-80 min-h-80 max-w-80 max-h-80 cursor-pointer xl:(min-w-90 min-h-90) overflow-hidden">
+            <div v-if="!n.available" class="absolute z-10 w-350px text-white top-35 bg-red-600 text-center">
+              {{
+                  unavailable
+              }}</div>
+            <img :src="n.image" width="350" height="350" />
           </div>
         </div>
       </div>
@@ -72,13 +76,15 @@ const result = (n: number) => {
         </h1>
       </template>
       <template v-slot:content>
-        <div class="flex justify-center gap-5 overflow-auto md:gap-20 xl:gap-20">
-          <div class="flex items-center max-h-50 max-w-50 md:(max-h-100 max-w-100) xl:(max-h-100 max-w-100)">
+        <div class="flex justify-center gap-5 md:gap-10 xl:gap-20">
+          <div class="flex items-center max-w-50 md:(max-w-100) xl:(max-w-100)">
             <img :src="resultPaintings[modal.activeIndex].image" />
           </div>
-          <video controls muted class="max-h-50 max-w-50 md:(max-h-100 max-w-100) xl:(max-h-100 max-w-100)">
-            <source :src="resultPaintings[modal.activeIndex].video" type="video/mp4" />
-          </video>
+          <div class="flex items-center max-w-50 md:(max-w-100) xl:(max-w-100)">
+            <video controls muted class="max-h-50 max-w-50 md:(max-h-100 max-w-100) xl:(max-h-100 max-w-100)">
+              <source :src="resultPaintings[modal.activeIndex].video" type="video/mp4" />
+            </video>
+          </div>
         </div>
       </template>
       <template v-slot:footer>
@@ -104,9 +110,6 @@ const result = (n: number) => {
   background-repeat: no-repeat;
 }
 
-.grscl {
-  filter: grayscale(80%) saturate(50%);
-}
 
 .down {
   @apply pb-40;

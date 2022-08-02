@@ -10,7 +10,9 @@ czech:
   price: 'Cena',
   all: 'Vše',
   contact: 'V případě zájmu mě kontaktujte',
-  format: 'Formát'
+  format: 'Formát',
+  onlyAvailable: 'Pouze dostupné',
+  paintingMail: 'Obraz'
 },
 english: 
 {
@@ -23,6 +25,8 @@ english:
   price: 'Price',
   all: 'All',
   contact: 'Contact me if interested',
-  format: 'Format'
+  format: 'Format',
+  onlyAvailable: 'Only available',
+  paintingMail: 'Painting'
 }
 }

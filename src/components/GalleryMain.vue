@@ -10,6 +10,8 @@ defineProps<{
   all: string
   contact: string
   format: string
+  onlyAvailable: string
+  paintingMail: string
 }>()
 
 const modal = reactive<{
@@ -27,28 +29,34 @@ const openModal = (index: number) => {
 const result = (n: number) => {
   resultPaintings.value = n == 0 ? paintings : paintings.filter(x => x.format == n);
 };
+const resultAvailable = ref(resultPaintings)
+const resultAvailableFilter = (m: boolean) => {
+  resultAvailable.value = m == false ? resultPaintings.value : paintings.filter(y => y.available == m);
+};
 
 </script>
 <template>
   <article>
-    <div class="bg-primary-pastel py-3 md:(flex gap-8 justify-center) xl:(flex gap-11 justify-center)">
-      <div class="text-20px leading-normal md:text-24px xl:text-24px text-primary">{{ format }}:</div>
-      <div class="text-20px leading-normal md:text-24px xl:text-24px text-primary cursor-pointer" @click="result(4040)">
+    <div class="bg-primary-pastel py-3 xl:(flex gap-11 justify-center)">
+      <div class="text-20px leading-normal md:text-32px xl:text-24px text-primary">{{ format }}:</div>
+      <div class="text-20px leading-normal md:text-32px xl:text-24px text-primary cursor-pointer" @click="result(4040)">
         40x40</div>
-      <div class="text-20px leading-normal md:text-24px xl:text-24px text-primary cursor-pointer" @click="result(3060)">
+      <div class="text-20px leading-normal md:text-32px xl:text-24px text-primary cursor-pointer" @click="result(3060)">
         30x60</div>
-      <div class="text-20px leading-normal md:text-24px xl:text-24px text-primary cursor-pointer" @click="result(3070)">
+      <div class="text-20px leading-normal md:text-32px xl:text-24px text-primary cursor-pointer" @click="result(3070)">
         30x70</div>
-      <div class="text-20px leading-normal md:text-24px xl:text-24px text-primary cursor-pointer" @click="result(5060)">
+      <div class="text-20px leading-normal md:text-32px xl:text-24px text-primary cursor-pointer" @click="result(5060)">
         50x60</div>
-      <div class="text-20px leading-normal md:text-24px xl:text-24px text-primary cursor-pointer" @click="result(5070)">
+      <div class="text-20px leading-normal md:text-32px xl:text-24px text-primary cursor-pointer" @click="result(5070)">
         50x70</div>
-      <div class="text-20px leading-normal md:text-24px xl:text-24px text-primary cursor-pointer" @click="result(6080)">
+      <div class="text-20px leading-normal md:text-32px xl:text-24px text-primary cursor-pointer" @click="result(6080)">
         60x80</div>
-      <div class="text-20px leading-normal md:text-24px xl:text-24px text-primary cursor-pointer" @click="result(0)">{{
+      <div class="text-20px leading-normal md:text-32px xl:text-24px text-primary cursor-pointer" @click="result(0)">{{
           all
-      }}
-      </div>
+      }}</div>
+      <div class="text-20px leading-normal md:text-32px xl:text-24px text-primary cursor-pointer"
+        @click="resultAvailableFilter(true)"> {{ onlyAvailable
+        }}</div>
     </div>
 
     <div class="up">
@@ -92,7 +100,7 @@ const result = (n: number) => {
           class="flex justify-center text-16 px gap-4 pt-2 md:(gap-6 pt-4 text-24px) xl:(gap-6 pt-4 text-24px)">
           <h2 class="text-primary font-semibold">{{ price }}: {{ resultPaintings[modal.activeIndex].price }},-
           </h2>
-          <a :href="`mailto:info@artbyalex.cz?subject=Obraz ${resultPaintings[modal.activeIndex].header}`"
+          <a :href="`mailto:info@artbyalex.cz?subject=${paintingMail} ${resultPaintings[modal.activeIndex].header}`"
             class="cursor-pointer font-semibold">{{ contact }}</a>
         </div>
         <div v-else
